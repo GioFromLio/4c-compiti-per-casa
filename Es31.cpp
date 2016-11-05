@@ -6,9 +6,9 @@ using namespace std;
 string c;
 void f(string c)
 {
-cout<<c<<endl;
-cout<<c<<endl;
-cout<<c<<endl;
+cout<<"1) "<<c<<endl;
+cout<<"2) "<<c<<endl;
+cout<<"3) "<<c<<endl;
 }
 
 int main ()

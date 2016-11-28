@@ -16,5 +16,5 @@ i=0;
 for(i=0; i<3; i++){
     numeri[i]=2*numeri[i];
 }
-cout<<"I primi tre numeri sono stati raddoppiati: "<<numeri[0]<<", "<<numeri[1]<<", "<<numeri[2];
+cout<<"I primi tre numeri sono stati raddoppiati: è"<<numeri[0]<<", "<<numeri[1]<<", "<<numeri[2];
 return 0;}

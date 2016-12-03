@@ -30,4 +30,5 @@ cout<<"Il prezzo incrementato del prodotto: "<<descrizione<<" e' di: "<<prezzo_i
 cout<<"Ci sono altri prodotti?(si=0, no=1)";
 cin>>r;
 }
+cout<<"Grazie per aver lavorato con noi "<<facc;
 return 0;}

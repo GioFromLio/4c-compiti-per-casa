@@ -3,7 +3,7 @@
  #include<iostream>
  #include<string.h>
  using namespace std;
-
+char facc=2;
  string candidato_1;
  string candidato_2;
  int voti_candidato_1;
@@ -38,6 +38,7 @@ if(percentuale_candidato_1==percentuale_candidato_2)
 cout<<"Ha vinto "<<candidato_2<<" con il "<<percentuale_candidato_2<<" % dei voti"<<'\n';
 cout<<candidato_1<<" con il "<<percentuale_candidato_1<<" % dei voti e' arrivato al secondo posto";
 }}
+cout<<"Grazie per aver lavorato con noi "<<facc;
 return 0;
 }
 

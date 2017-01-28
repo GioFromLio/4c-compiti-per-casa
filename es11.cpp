@@ -51,6 +51,12 @@ while (scelta == 's'){
     cin>> scelta;
 }
 }
+string nome_scuola;
+cout << "Di quale scuola vuoi l'elenco studenti?" << endl;
+cin>>scelta;
+
+
+
 return 0;
 }
 

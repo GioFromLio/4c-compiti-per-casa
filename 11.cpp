@@ -20,6 +20,7 @@ class Studente{
      string cognome;
      unsigned int id_scuola;
  public:
+     Studente (string nome, string cognome, unsigned int id_scuola)
 };
 
 
@@ -37,16 +38,13 @@ for (int i = 0; i<N_SCUOLE; i++){
     char scelta = 's';
 
 while (scelta == 's'){
-        string nome_studente;
+    string nome_studente;
     cout<<"Inserisci il nome dello studente: " << endl;
     cin>>nome_studente;
     string cognome_studente;
     cout<<"Inserisci il cognome dello studente: " << endl;
     cin>>cognome_studente;
-    Studente stud;
-    stud.nome = nome_studente;
-    stud.cognome= cognome_studente;
-    stud.id_scuola = i;
+    Studente stud(nome_studente, nome_studente, i );
     cout<<"Vuoi continuare?(s/n): " << endl;
     cin>> scelta;
 }
@@ -54,6 +52,8 @@ while (scelta == 's'){
 string nome_scuola;
 cout << "Di quale scuola vuoi l'elenco studenti?" << endl;
 cin>>id;
+Outstud;
+
 
 
 
@@ -70,7 +70,7 @@ if(Scuola.id==Studente.id_sccuola)
     {
         cout<<"Lo studente appartiene a quella scuola" << endl;
     }
-}else
+}else{}
 
 
 Scuola::Scuola(string nome_scuola){

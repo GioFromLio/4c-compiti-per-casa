@@ -8,10 +8,11 @@ public:
     unsigned int id;
     string denominazione;
     unsigned int num_studenti;
-    studente studenti[N_STUDENTI];
+    Studente studenti[N_STUDENTI];
     public:
         Scuola(string nome_scuola);
         Scuola(string nome_scuola, unsigned int id_scuola);
+        void stampa_elenco();
     };
 
 class Studente{
@@ -20,9 +21,11 @@ class Studente{
      string cognome;
      unsigned int id_scuola;
  public:
-     Studente (string nome, string cognome, unsigned int id_scuola)
+     Studente (string nome, string cognome, unsigned int id_scuola);
 };
 
+ int k=0;
+ char facc= 2;
 
 int main(){
 
@@ -36,6 +39,7 @@ for (int i = 0; i<N_SCUOLE; i++){
     scuole[i] = s;
     s.id= i;
     char scelta = 's';
+    int j= 0;
 
 while (scelta == 's'){
     string nome_studente;
@@ -45,33 +49,47 @@ while (scelta == 's'){
     cout<<"Inserisci il cognome dello studente: " << endl;
     cin>>cognome_studente;
     Studente stud(nome_studente, nome_studente, i );
+    s.studente[] = stud ;
     cout<<"Vuoi continuare?(s/n): " << endl;
     cin>> scelta;
+    j++;
 }
 }
+
+unsigned int id;
 string nome_scuola;
 cout << "Di quale scuola vuoi l'elenco studenti?" << endl;
 cin>>id;
-Outstud;
-
-
+outstud(id, scuole);
 
 
 return 0;
 }
 
-Scuola(string nome_scuola, unsigned int id_scuola){
+
+
+
+void outstud( unsigned int id, Scuola scuole[N_SCUOLE]){
+    scuole[id].stampa_elenco();
+}
+
+void Scuola::stampa_elenco(Studente studenti[N_STUDENTI], int k){
+
+    while (k<N_STUDENTI){
+cout << "STUDENTE " << k<< ":" << endl;
+cout << "Nome:" << studenti[k].nome << endl;
+cout << "Cognome:" << studenti[k].cognome << endl;
+k++;
+cout << "----" << facc << "----" << facc << "----" << facc << "----" << facc << "----" << endl;
+    }
+}
+
+
+
+
+Scuola::Scuola(string nome_scuola, unsigned int id_scuola){
 denominazione = nome_scuola;
 id=id_scuola;}
-
-
-void Outstud(){
-if(Scuola.id==Studente.id_sccuola)
-    {
-        cout<<"Lo studente appartiene a quella scuola" << endl;
-    }
-}else{}
-
 
 Scuola::Scuola(string nome_scuola){
 denominazione= nome_scuola;}

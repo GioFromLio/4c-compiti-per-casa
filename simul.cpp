@@ -19,6 +19,7 @@ public:
 
 
 int n=0, i=0;
+char facc= 2;
 
 
 int main(){
@@ -36,10 +37,12 @@ int main(){
             case 'f': cronometro.stop(); break;
             case 'p': cronometro.print(); break;
             case 'm': cronometro.tempo_parziale(); break;
-            default: cout << "Opzione non valida" << endl;
+            default: cout << "Opzione non valida " << facc << endl;
         }
-    }while(scelta != 'x');
+    }while(scelta != 'x')
+    ;
 }
+
 
 Cronometro::Cronometro(){
     inizio = 0;
@@ -66,11 +69,12 @@ void Cronometro::print(){
 	time_t t;
 	fine = time(0);
 	t = fine-inizio;
-	cout<<"Sono trascorsi in secondi :" << t <<endl;
+	cout<<"Sono trascorsi :" << t <<" secondi"<<endl;
 	cout<<"E i parziali sono:"<<endl;
+
 	 while(i<n){
         int am= i+1;
-        cout <<"Parziale" << am <<" " << parziale[am] - parziale[i]<< " sec" << endl;
+        cout <<"Parziale" << am <<" ---> " << parziale[i] - inizio << " sec" << endl;
         i++;
 	 }
 

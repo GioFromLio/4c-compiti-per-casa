@@ -19,7 +19,7 @@ public:
 
 
 int n=0, i=0;
-char facc= 2;
+char facc= 1;
 
 
 int main(){
